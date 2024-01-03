@@ -1,0 +1,11 @@
+#navbar
+{
+    background-color: #2B5FAA;
+}
+.nav-link{
+    font-size: 20px;
+}
+
+.navbar-brand{
+    z-index: 1;
+}

@@ -1,0 +1,677 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../static/Harsha-Logo.png">
+    <title>National Geographic Web</title>
+    <link rel = "icon" href = "logo.webp" type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .navbar .nav-item .dropdown-menu{ margin-top:10px; }
+        .navbar .nav-item:focus {
+            border:none;
+        }
+        .navbar .nav-item:active {
+            border:none;
+        }
+        .navbar-custom{
+          background-color: #2B5FAA;
+        }
+        .navbar-brand{
+          font-size: 35px;
+          font-weight:300;
+          margin-left:30px;
+
+        }
+        .navbar-toggler{ 
+          display:block; 
+        }
+
+        .nav-link{
+          font-size:20px ;
+          padding-bottom:2px;
+          border-bottom:1px #2B5FAA solid;
+          /* #2B5FAA */
+        }
+
+        .nav-link:hover{
+          border-bottom:1px white solid;
+        }
+        th img{
+          max-width: 50%;
+        }
+
+        .col-sm-6 .card{
+          width:10rem;
+        }
+        .birdrow{
+          display: flex;
+          flex-direction: row;
+          width:80%;
+          margin-left:10%;
+        }
+        .birdrow .card{
+          margin:10px;
+        }
+
+        .images{
+          width:40%;
+          display: inline-block;
+        }
+        .images audio{
+          width: 70%;
+        }
+        .modalText{
+          width:60%;
+          display: inline-block;
+          height:100%;
+          padding:20px;
+        }
+        .modal-body{
+          display: flex;
+          flex-direction: row;
+        }
+
+        .birdrow .card-body button{
+          width:100%;
+          color:white;
+          border:none;
+          background:#191919;
+
+        }
+
+        .jumbotron .inside{
+          display:flex;
+          flex-direction: row;
+        }
+
+        #project{
+          margin-top:20px;
+          border-radius:10px;
+        }
+
+        #collabs{
+          margin-top:20px;
+          border-radius:10px;
+        }
+
+        #ceh{
+          margin-top:20px;
+          border-radius:10px;
+        }
+
+        .birdrow .card img{
+          height:17rem;
+        }
+        @media only screen and (max-width: 1000px) {
+          .birdrow{
+            display: flex;
+            /* flex-direction: column; */
+            margin-left:10%;
+          }
+          .birdrow .card{
+            margin:10px;
+          }
+          .birdrow .card img{
+          height:10rem;
+          }
+        }
+        @media only screen and (max-width: 600px) {
+          .jumbotron .inside .image img{
+            width:15rem;
+          }
+          .birdrow{
+            display: flex;
+            flex-direction: column;
+            margin-left:10%;
+            align-items: center;
+            justify-content: center;
+          }
+          .birdrow .card img{
+          height:17rem;
+          }
+
+          .jumbotron img{
+            display:none;
+          }
+          .jumbotron{
+            text-align: center;
+          }
+        }
+
+    </style>
+</head>
+<body>
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="ashambu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Ashambu Chilappan</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="images" >
+          <img src="pop-1.jpg" style="width:100%; margin-top:25px;" id="pop-img1">
+          <img src="ashambu chillapan.jpg" alt="" style="width:100%;margin-top:25px;">
+          <h5 style="margin-top: 30px;">Listen to the call</h5>
+          <audio controls>
+            <source src="Ashambu.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="modalText">
+          This is the only montane laughingthrush in its range and hence unmistakable. From forehead to nape it is pale brown with indistinct gray streaking. Short whitish eyebrow does not extend prominently behind the eye. Upperparts cold gray-brown, wings and tail browner; chin and breast whitish with broad gray streaking, central belly and vent white, flanks and sides of vent rufous-chestnut. Inhabits stunted montane and reed-bamboo forests; seen in pairs or noisy flocks, producing a melodious “pee-koo-pee-koo” song and several other chatters intermingled with musical notes. Heard more often than seen; its songs and calls are usually the first 
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="black-orange" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Black Orange Flycatcher</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="images" >
+          <img src="pop-2.jpg" style="width:100%; margin-top:25px;" id="pop-img1">
+          <img src="black and orange.jpg" alt="" style="width:100%;margin-top:25px;">
+          <h5 style="margin-top: 30px;">Listen to the call</h5>
+          <audio controls>
+            <source src="BlackOrangeFlycatcher.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="modalText">
+          Tiny, brightly-colored flycatcher. Female is slightly paler than the male, particularly on the head. In addition to typical “flycatching,” also forages on the ground and in dense undergrowth, like a babbler or fulvetta. Inhabits montane shola forests from 1000 meters upwards. Calls are short bursts of buzzy notes.
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="nilgiri-sholakili" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Nilgiri Sholaikili</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="images" >
+          <img src="pop-3.jpg" style="width:100%; margin-top:25px;" id="pop-img1">
+          <img src="nilgiri sholaikili.JPG" alt="" style="width:100%;margin-top:25px;">
+          <h5 style="margin-top: 30px;">Listen to the call</h5>
+          <audio controls>
+            <source src="nilgiri sholaikili.JPG" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="modalText">
+          Dumpy little bird, slaty-blue with a tan belly. Highly restricted and scattered range in the Nilgiri Hills, where it is found at 900-2100 meters of elevation in sholas (patches of stunted montane forest separated by open grassy areas). Shy and retiring, foraging primarily on the ground and in dense undergrowth. Song is surprisingly long-winded for such a small bird and is composed of high warbling notes and buzzy whistles.
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="nilgiri-pipit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Nilgiri Pipit</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="images" >
+          <img src="pop-4.jpg" style="width:100%; margin-top:25px;" id="pop-img1">
+          <img src="nilgiri pipit.jpg" alt="" style="width:100%;margin-top:25px;">
+          <h5 style="margin-top: 30px;">Listen to the call</h5>
+          <audio controls>
+            <source src="nilgiri pipit.jpg" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="modalText">
+          Warm buff-brown pipit with prominent white eyebrow and strong dense streaking all over the back; breast is more finely and sparsely marked. Much more well-marked above than other local pipits. Restricted to the southern end of the Western Ghats, where it inhabits open grassy areas at 1000-2300 meters.
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ashambu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Ashambu Chilappan</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="images" >
+          <img src="pop-5.jpg" style="width:100%; margin-top:25px;" id="pop-img1">
+          <img src="ashambu chillapan.jpg" alt="" style="width:100%;margin-top:25px;">
+          <h5 style="margin-top: 30px;">Listen to the call</h5>
+          <audio controls>
+            <source src="Ashambu.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="modalText">
+          This is the only montane laughingthrush in its range and hence unmistakable. From forehead to nape it is pale brown with indistinct gray streaking. Short whitish eyebrow does not extend prominently behind the eye. Upperparts cold gray-brown, wings and tail browner; chin and breast whitish with broad gray streaking, central belly and vent white, flanks and sides of vent rufous-chestnut. Inhabits stunted montane and reed-bamboo forests; seen in pairs or noisy flocks, producing a melodious “pee-koo-pee-koo” song and several other chatters intermingled with musical notes. Heard more often than seen; its songs and calls are usually the first 
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ashambu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Ashambu Chilappan</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="images" >
+          <img src="pop-6.jpg" style="width:100%; margin-top:25px;" id="pop-img1">
+          <img src="ashambu chillapan.jpg" alt="" style="width:100%;margin-top:25px;">
+          <h5 style="margin-top: 30px;">Listen to the call</h5>
+          <audio controls>
+            <source src="Ashambu.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="modalText">
+          This is the only montane laughingthrush in its range and hence unmistakable. From forehead to nape it is pale brown with indistinct gray streaking. Short whitish eyebrow does not extend prominently behind the eye. Upperparts cold gray-brown, wings and tail browner; chin and breast whitish with broad gray streaking, central belly and vent white, flanks and sides of vent rufous-chestnut. Inhabits stunted montane and reed-bamboo forests; seen in pairs or noisy flocks, producing a melodious “pee-koo-pee-koo” song and several other chatters intermingled with musical notes. Heard more often than seen; its songs and calls are usually the first 
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ashambu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Ashambu Chilappan</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="images" >
+          <img src="pop-7.jpg" style="width:100%; margin-top:25px;" id="pop-img1">
+          <img src="ashambu chillapan.jpg" alt="" style="width:100%;margin-top:25px;">
+          <h5 style="margin-top: 30px;">Listen to the call</h5>
+          <audio controls>
+            <source src="Ashambu.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="modalText">
+          This is the only montane laughingthrush in its range and hence unmistakable. From forehead to nape it is pale brown with indistinct gray streaking. Short whitish eyebrow does not extend prominently behind the eye. Upperparts cold gray-brown, wings and tail browner; chin and breast whitish with broad gray streaking, central belly and vent white, flanks and sides of vent rufous-chestnut. Inhabits stunted montane and reed-bamboo forests; seen in pairs or noisy flocks, producing a melodious “pee-koo-pee-koo” song and several other chatters intermingled with musical notes. Heard more often than seen; its songs and calls are usually the first 
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ashambu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Ashambu Chilappan</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="images" >
+          <img src="pop-8.jpg" style="width:100%; margin-top:25px;" id="pop-img1">
+          <img src="ashambu chillapan.jpg" alt="" style="width:100%;margin-top:25px;">
+          <h5 style="margin-top: 30px;">Listen to the call</h5>
+          <audio controls>
+            <source src="Ashambu.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="modalText">
+          This is the only montane laughingthrush in its range and hence unmistakable. From forehead to nape it is pale brown with indistinct gray streaking. Short whitish eyebrow does not extend prominently behind the eye. Upperparts cold gray-brown, wings and tail browner; chin and breast whitish with broad gray streaking, central belly and vent white, flanks and sides of vent rufous-chestnut. Inhabits stunted montane and reed-bamboo forests; seen in pairs or noisy flocks, producing a melodious “pee-koo-pee-koo” song and several other chatters intermingled with musical notes. Heard more often than seen; its songs and calls are usually the first 
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ashambu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Ashambu Chilappan</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="images" >
+          <img src="pop-1.jpg" style="width:100%; margin-top:25px;" id="pop-img1">
+          <img src="ashambu chillapan.jpg" alt="" style="width:100%;margin-top:25px;">
+          <h5 style="margin-top: 30px;">Listen to the call</h5>
+          <audio controls>
+            <source src="Ashambu.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="modalText">
+          This is the only montane laughingthrush in its range and hence unmistakable. From forehead to nape it is pale brown with indistinct gray streaking. Short whitish eyebrow does not extend prominently behind the eye. Upperparts cold gray-brown, wings and tail browner; chin and breast whitish with broad gray streaking, central belly and vent white, flanks and sides of vent rufous-chestnut. Inhabits stunted montane and reed-bamboo forests; seen in pairs or noisy flocks, producing a melodious “pee-koo-pee-koo” song and several other chatters intermingled with musical notes. Heard more often than seen; its songs and calls are usually the first 
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ashambu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Ashambu Chilappan</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="images" >
+          <img src="pop-1.jpg" style="width:100%; margin-top:25px;" id="pop-img1">
+          <img src="ashambu chillapan.jpg" alt="" style="width:100%;margin-top:25px;">
+          <h5 style="margin-top: 30px;">Listen to the call</h5>
+          <audio controls>
+            <source src="Ashambu.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="modalText">
+          This is the only montane laughingthrush in its range and hence unmistakable. From forehead to nape it is pale brown with indistinct gray streaking. Short whitish eyebrow does not extend prominently behind the eye. Upperparts cold gray-brown, wings and tail browner; chin and breast whitish with broad gray streaking, central belly and vent white, flanks and sides of vent rufous-chestnut. Inhabits stunted montane and reed-bamboo forests; seen in pairs or noisy flocks, producing a melodious “pee-koo-pee-koo” song and several other chatters intermingled with musical notes. Heard more often than seen; its songs and calls are usually the first 
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ashambu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Ashambu Chilappan</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="images" >
+          <img src="pop-1.jpg" style="width:100%; margin-top:25px;" id="pop-img1">
+          <img src="ashambu chillapan.jpg" alt="" style="width:100%;margin-top:25px;">
+          <h5 style="margin-top: 30px;">Listen to the call</h5>
+          <audio controls>
+            <source src="Ashambu.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="modalText">
+          This is the only montane laughingthrush in its range and hence unmistakable. From forehead to nape it is pale brown with indistinct gray streaking. Short whitish eyebrow does not extend prominently behind the eye. Upperparts cold gray-brown, wings and tail browner; chin and breast whitish with broad gray streaking, central belly and vent white, flanks and sides of vent rufous-chestnut. Inhabits stunted montane and reed-bamboo forests; seen in pairs or noisy flocks, producing a melodious “pee-koo-pee-koo” song and several other chatters intermingled with musical notes. Heard more often than seen; its songs and calls are usually the first 
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ashambu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Ashambu Chilappan</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="images" >
+          <img src="pop-1.jpg" style="width:100%; margin-top:25px;" id="pop-img1">
+          <img src="ashambu chillapan.jpg" alt="" style="width:100%;margin-top:25px;">
+          <h5 style="margin-top: 30px;">Listen to the call</h5>
+          <audio controls>
+            <source src="Ashambu.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="modalText">
+          This is the only montane laughingthrush in its range and hence unmistakable. From forehead to nape it is pale brown with indistinct gray streaking. Short whitish eyebrow does not extend prominently behind the eye. Upperparts cold gray-brown, wings and tail browner; chin and breast whitish with broad gray streaking, central belly and vent white, flanks and sides of vent rufous-chestnut. Inhabits stunted montane and reed-bamboo forests; seen in pairs or noisy flocks, producing a melodious “pee-koo-pee-koo” song and several other chatters intermingled with musical notes. Heard more often than seen; its songs and calls are usually the first 
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <a href="/index.html"><img src="logo.webp" height="100" width="100" alt=""></a>
+  <h1  class="navbar-brand" href="/"> Kodaikanal International School <p style="font-size: 20px;" class="navbar-brand-bottom">A school the world needs</p></h1>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/project.html">About the Project <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about.html">About the collaborators <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+     
+      <div class="jumbotron">
+
+          <div class="inside">
+            <div class="text">
+              <h1 class="display-4">Birds of the Shola Sky Islands</h1>
+              <p class="lead">Discover 12 bird species that thrive
+                exclusively in the Shola Sky Island habitat</p>
+              <hr class="my-4">
+              <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+              <a id = "project" class="btn btn-primary btn-lg" href="#" role="button">The Project</a>
+              <a id = "collabs" class="btn btn-primary btn-lg" href="/about.html" role="button">The Collaborators</a>
+              <a id = "ceh" class="btn btn-primary btn-lg" href="#" role="button">KIS CEH</a>
+            </div>
+            <div style = "margin-left:10%;" class="image">
+                <img style = "width:25rem" src="Nilgiri%20Flycatcher%20(3).png" class="card-img-top"  alt="...">
+            </div>
+          </div>
+        
+      </div>
+      <div class="birdrow">
+        <div class="card" style="width: 18rem;">
+          <img src="ashambu chillapan.jpg" class="card-img-top"  alt="...">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ashambu">
+              Ashambu Chilappan
+            </button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="black and orange.jpg" class="card-img-top"  alt="...">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#black-orange">
+              Black and Orange Flycatcher
+            </button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="nilgiri sholaikili.JPG" class="card-img-top"  alt="...">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nilgiri-sholakili">
+              Nilgiri Sholakili
+            </button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="nilgiri pipit.jpg" class="card-img-top"  alt="...">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ashambu">
+              Ashambu Chilappan
+            </button>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="birdrow">
+      <div class="card" style="width: 18rem;">
+        <img src="banasura chilappan.jpg" class="card-img-top"  alt="...">
+        <div class="card-body">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ashambu">
+            Banasura Chilappan
+          </button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="wood pigeon.jpg" class="card-img-top"  alt="...">
+        <div class="card-body">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ashambu">
+            Nilgiri Wood Pigeon
+          </button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="nilgiri chilapan.jpg" class="card-img-top"  alt="...">
+        <div class="card-body">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ashambu">
+            Nilgiri Chilappan
+          </button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="golden headed cisticola.jpg" class="card-img-top"  alt="...">
+        <div class="card-body">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ashambu">
+            Golden Head Cisticola
+          </button>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="birdrow">
+    <div class="card" style="width: 18rem;">
+      <img src="white belied sholai kili.jpg"card-img-top"  alt="...">
+      <div class="card-body">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ashambu">
+          White bellied Sholaikili
+        </button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="canary flycatcher.jpg" class="card-img-top"  alt="...">
+      <div class="card-body">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ashambu">
+          Canary Flycatcher
+        </button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="nilgiri flycatcher.jpg" class="card-img-top"  alt="...">
+      <div class="card-body">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ashambu">
+          Nilgiri Flycatcher
+        </button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="palani.JPG" class="card-img-top"  alt="...">
+      <div class="card-body">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ashambu">
+          Palani Chilappan
+        </button>
+      </div>
+    </div>
+
+</div>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

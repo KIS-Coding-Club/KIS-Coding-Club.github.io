@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="natart.css" rel="stylesheet" type="text/css"> 
+</head>
+<body>
+
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href=""style="color: white">About the Artist</a>
+  <a href="Nat geo web final.html">Home</a>
+  <a href="About-exhi.html">About the Exibition</a>
+  <a href="https://www.kis.in/breathe/kis-center-for-environment-and-humanity" target="#">KIS CEH</a>
+</div>
+ 
+<div id="navbar">
+<button class="openbtn" onclick="openNav()">
+    <img src="logo.webp" alt="logo" style="width:50%" id="logo-img">
+    <p id="navbartxt">Kodaikanal International School</p>
+    <p id="navbartxt2">A school the world needs</p>
+    <p id="element">☰</p>
+</button>
+</div>
+    
+<p id="static-space"></p>
+
+<div class="headerthing">
+<table style="width:100%" class="table1">
+  <tr>
+    <th id="headrow">
+    <div class="inner-text">
+    <h2 id="Title">About the Artists</h2>
+    <p id="title">Special thanks to Arnab das, an electrical engineer; Tsetan Angmo, an animation filmaker; and Niharika Rajput, a wildlife artist who brought the "Birds of the Shola Sky Islands" project to life</p>
+    <button class="button button1"><a href="#headers1" style="text-decoration:none; color: black"target="#">Arnab Das</a></button>
+    <button class="button button2"><a href="#headers2" style="text-decoration:none; color: black" target="#">Niharika Rajput</a></button>
+    <button class="button button3"><a href="#headers3" style="text-decoration:none; color: black"target="#">Tsetan Angmo</a></button>
+        </div>
+      </th>
+    <th id ="box2">
+      <img src="Nilgiri%20Flycatcher%20(3).png" id="head-img">
+    </th>
+    </tr>  
+</table>
+</div>
+
+<img src="BTN-thing.png" id="btn-thing">
+<div id="pg-cont">
+<table>
+<tr id="info-row">
+<th id="info-col">
+<h1 id="headers2">Niharika Rajput</h1>
+<p id="info">Niharika Rajput is a Wildlife artist, Creative Conservationist, Visual Science Communicator & a National Geographic Explorer. Her work aims to use education, art & storytelling to increase environmental awareness. Rajput is a self taught artist & educator who has learned to proficiently conduct her work through tangible, on the field experiences & by working closely with Ornithologists, Evolutionary biologists & Wildlife organisations. In the age of the Anthropocene Rajput's work hopes to foster an environment where communities can come together , be inspired and collectively come up with solutions to conserve wildlife. 
+Niharika's work has been featured in many magazines and on other platforms such as Elle Decor, The Epoch Times, Ideal Home and Garden, Aesthetica magazine, Hindustan Times, The Hindu, PuneMirror, Etsy India, Mashable India, Little Black Book, My Modern Met, Thisiscollosal.com, Atlasobscura.com, Rootsandleisure.com, natureinfocus.com, shoutoutdfw.com among others.</p>
+<p id="info"><a href="http://www.paperchirrups.com" target="#"><img src="globe.png" style="width: 5%"></a></p>
+<p id="info"><a href="https://www.instagram.com/paperchirrups/?hl=en" target="#"><img src="instagram.png" style="width: 5%"></a></p>
+</th> 
+<th id="info-col-img">
+<img src="Headshot_rajput.jpg" style="width: 500px; height: 560px;">
+</th>
+</tr>  
+
+<tr id="info-row">
+<th id="info-col">
+<h1 id="headers1">Arnab Kumar Das</h1>
+<p id="info">Installed motion sensors of bird calls in the Shola Sky Islands Exhibit Arnab  is an Electronics Engineer from India,who has had a passion for creating funky gizmos since his childhood. He was fascinated with electronic appliances at a young age and pursued his interest in electronics with great enthusiasm. His dedication for sharing his knowledge and experiences is commendable, given his participation in various tech fests and passion projects such as his contribution to the motion-sensors in this Shola Sky Island Birds exhibit. Arnab has a  strong desire to make an impact on the world by finding creative ways to embed electronics and electro-mechanical processes in social and environmental impact projects. </p> 
+<p id="info"><a href="https://www.arnabkumardas.com/" target="#"><img src="globe.png" style="width: 5%"></a></p>
+<p id="info"><a href="https://www.instagram.com/arnabdasbwn/?hl=en" target="#"><img src="instagram.png" style="width: 5%"></a></p>
+</th> 
+<th id="info-col-img">
+<img src="f7d0aa2b-2ed1-4207-8ae0-48e6b7a6fe09.JPG" style="width: 490px">
+</th>
+</tr>  
+    
+<tr id="info-row">
+<th id="info-col">
+<h1 id="headers3">Tsetan Angmo</h1>
+<p id="info">creator of the animation video “Endangered” Tsetan is a visual artist from Ladakh, currently pursuing Masters in Animation Film Design at National Institute of Design. She has a strong passion for storytelling through illustration and sketches, and finds inspiration from her natural surroundings. She is never seen without a sketchbook in hand. Her first animated film “ No Eechu “ adapted from a local folk tale of Ladakh was screened during the first Bird Festival of Ladakh in 2018. In 2021, her film, “Gyurja” (Change) was screened during The Himalayan Film Festival. She believes that films have a deep and long-lasting impact on society, and hopes to make her mark on communities around India through her work. </p>  
+<p id="info"><a href="https://www.instagram.com/willowturtle/?hl=en" target="#"><img src="instagram.png" style="width: 5%"></a></p>
+</th> 
+<th id="info-col-img">
+<img src="59646b1c-1159-4895-b195-46c3ce40a475.jpg" style="width: 500px">
+</th>
+</tr>  
+</table>
+</div>
+    
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    
+function openNav() {
+  document.getElementById("mySidepanel").style.height = "100%";
+  document.getElementById("mySidepanel").style.width = "20%";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.height = "0";
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script> 
+</body>
+</html>

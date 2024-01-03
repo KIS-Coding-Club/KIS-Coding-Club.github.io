@@ -1,0 +1,390 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../static/Harsha-Logo.png">
+    <title>National Geographic Web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .navbar .nav-item .dropdown-menu{ margin-top:10px; }
+        .navbar .nav-item:focus {
+            border:none;
+        }
+        .navbar .nav-item:active {
+            border:none;
+        }
+        .navbar-custom{
+          background-color: #2B5FAA;
+        }
+        .navbar-brand{
+          font-size: 35px;
+          font-weight:300;
+          margin-left:30px;
+
+        }
+        .navbar-toggler{ 
+          display:block; 
+        }
+
+        .nav-link{
+          font-size:20px ;
+          padding-bottom:2px;
+          border-bottom:1px #2B5FAA solid;
+          /* #2B5FAA */
+        }
+
+        .nav-link:hover{
+          border-bottom:1px white solid;
+        }
+        th img{
+          max-width: 50%;
+        }
+
+        .col-sm-6 .card{
+          width:10rem;
+        }
+        .birdrow{
+          display: flex;
+          flex-direction: row;
+          width:80%;
+          margin-left:10%;
+        }
+        .birdrow .card{
+          margin:10px;
+        }
+
+        .images{
+          width:40%;
+          display: inline-block;
+        }
+        .images audio{
+          width: 70%;
+        }
+        .modalText{
+          width:60%;
+          display: inline-block;
+          height:100%;
+          padding:20px;
+        }
+        .modal-body{
+          display: flex;
+          flex-direction: row;
+        }
+
+        .birdrow .card-body button{
+          width:100%;
+          color:white;
+          border:none;
+          background:#191919;
+
+        }
+
+        .jumbotron .inside{
+          display:flex;
+          flex-direction: row;
+        }
+
+        .jumbotron{
+            margin-bottom:15px;
+        }
+        #project{
+          margin-top:20px;
+          border-radius:10px;
+        }
+
+        #collabs{
+          margin-top:20px;
+          border-radius:10px;
+        }
+
+        #ceh{
+          margin-top:20px;
+          border-radius:10px;
+        }
+
+        #project2{
+          margin-top:20px;
+          border-radius:10px;
+        }
+
+        #collabs2{
+          margin-top:20px;
+          border-radius:10px;
+        }
+
+        #ceh2{
+          margin-top:20px;
+          border-radius:10px;
+        }
+        .birdrow .card img{
+          height:17rem;
+        }
+
+        .peoplealt {
+            display: none;
+        }
+        .peoplealt .body{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+            #ceh2{
+                visibility: hidden;
+            }
+            #collabs2{
+                visibility: hidden;
+            }
+            #project2{
+                visibility: hidden;
+            }
+        @media only screen and (max-width: 1000px) {
+          .birdrow{
+            display: flex;
+            /* flex-direction: column; */
+            margin-left:10%;
+          }
+          .birdrow .card{
+            margin:10px;
+          }
+          .birdrow .card img{
+          height:10rem;
+          }
+
+        }
+        @media only screen and (max-width: 1000px) {
+            .people{
+                display: none;
+            }
+            .peoplealt{
+                display:block;
+            }
+            .intro{
+                display:none;
+            }
+            #ceh2{
+                visibility: visible;
+            }
+            #collabs2{
+                visibility: visible;
+            }
+            #project2{
+                visibility: visible;
+            }
+            
+        }
+        @media only screen and (max-width: 600px) {
+          .jumbotron .inside .image img{
+            width:15rem;
+          }
+          .birdrow{
+            display: flex;
+            flex-direction: column;
+            margin-left:10%;
+            align-items: center;
+            justify-content: center;
+          }
+          .birdrow .card img{
+          height:17rem;
+          }
+          #jumbo img{
+            display:none;
+          }
+          #jumbo{
+            text-align: center;
+          }
+
+          .navbar-brand{
+            font-size: 30px;
+          }
+        }
+
+    </style>
+</head>
+<body>
+  <!-- Button trigger modal -->
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <img src="logo.webp" height="100" width="100" alt="">
+        <h1  class="navbar-brand" href="/"> Kodaikanal International School <p style="font-size: 20px;" class="navbar-brand-bottom">A school the world needs</p></h1>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">About the Project <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/">About the collaborators <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/">About KIS CEH <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    
+      <div id="jumbo" class="jumbotron main">
+
+        <div class="inside">
+          <div class="text">
+            <h1 class="display-4">About the collaborators</h1>
+            <p class="lead">Special thanks to Arnab das, an electrical engineer; 
+              Tsetan Angmo, an animation filmaker; and Niharika Rajput, a wildlife artist who brought the 
+              "Birds of the Shola Sky Islands" project to life</p>
+            <hr class="my-4">
+            <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+            <a id = "project" class="btn btn-primary btn-lg intro" href="#person1" role="button">Niharika Rajput</a>
+            <a id = "collabs" class="btn btn-primary btn-lg intro" href="#person2" role="button">Arnab Das</a>
+            <a id = "ceh" class="btn btn-primary btn-lg intro" href="#person3" role="button">Tsetan Angmo</a>
+
+            <a id = "project2" class="btn btn-primary btn-lg" href="#person1.1" role="button">Niharika Rajput</a>
+            <a id = "collabs2" class="btn btn-primary btn-lg" href="#person2.1" role="button">Arnab Das</a>
+            <a id = "ceh2" class="btn btn-primary btn-lg" href="#person3.1" role="button">Tsetan Angmo</a>
+          </div>
+          <div style = "margin-left:10%;" class="image">
+              <img style = "width:25rem" src="Nilgiri%20Flycatcher%20(3).png" class="card-img-top"  alt="...">
+          </div>
+        </div>
+      
+    </div>
+    
+      <div class="jumbotron people" id = "person1">
+
+          <div class="inside">
+            <div class="text">
+              <h1 class="display-4">Niharika Rajput</h1>
+              <p class="lead">Niharika Rajput is a Wildlife artist,
+                 Creative Conservationist, Visual Science Communicator & a
+                  National Geographic Explorer. Her work aims to use education,
+                   art & storytelling to increase environmental awareness. 
+                   Rajput is a self taught artist & educator who has learned 
+                   to proficiently conduct her work through tangible, on the 
+                   field experiences & by working closely with Ornithologists, 
+                   Evolutionary biologists & Wildlife organisations. 
+                   In the age of the Anthropocene Rajput's work hopes to 
+                   foster an environment where communities can come together ,
+                    be inspired and collectively come up with solutions to conserve wildlife. Niharika's work has been featured in many magazines and on other platforms such as Elle Decor,
+                     The Epoch Times, Ideal Home and Garden, Aesthetica magazine, Hindustan Times, The Hindu, PuneMirror, Etsy India, Mashable India, Little Black Book, 
+                     My Modern Met, Thisiscollosal.com, Atlasobscura.com, Rootsandleisure.com, natureinfocus.com, shoutoutdfw.com among others.
+
+              </p>
+              <hr class="my-4">
+              <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+              <a id = "project" class="btn btn-primary btn-lg" href="https://www.instagram.com/paperchirrups/?hl=en" role="button"><i class="bi bi-instagram"></i> Instagram</a>
+        <a id = "collabs" class="btn btn-primary btn-lg" href="http://www.paperchirrups.com/" role="button"><i class="bi bi-globe"></i> Website</a>
+            </div>
+            <div style = "margin-left:10%" class="image">
+                <img style = "width:30rem; margin-top:50px;" src="Headshot_rajput.jpg" class="card-img-top"  alt="...">
+            </div>
+          </div>
+        
+      </div>
+      
+      
+    <div class="jumbotron people" id="person2">
+
+        <div class="inside">
+          <div class="text">
+            <h1 class="display-4">Arnab Kumar Das</h1>
+            <p class="lead">Installed motion sensors of bird calls in the Shola Sky Islands Exhibit Arnab is an Electronics Engineer from India,who has had a passion for creating funky gizmos since his childhood. He was fascinated with electronic appliances at a young age and pursued his interest in electronics with great enthusiasm. His dedication for sharing his knowledge and experiences is commendable, given his participation in various tech fests and passion projects such as his contribution to the motion-sensors in this Shola Sky Island Birds exhibit. Arnab has a strong desire to make an impact on the world by finding creative ways to embed electronics and electro-mechanical processes in social and environmental impact projects.</p>
+            <hr class="my-4">
+            <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+                  <a id = "project" class="btn btn-primary btn-lg" href="https://www.instagram.com/arnabdasbwn/?hl=en" role="button"><i class="bi bi-instagram"></i> Instagram</a>
+                  <a id = "collabs" class="btn btn-primary btn-lg" href="https://www.arnabkumardas.com/" role="button"><i class="bi bi-globe"></i> Website</a>
+          </div>
+          <div style = "margin-left:10%;" class="image">
+              <img style = "width:25rem" src="f7d0aa2b-2ed1-4207-8ae0-48e6b7a6fe09.JPG" class="card-img-top"  alt="...">
+          </div>
+        </div>
+      
+    </div>
+    <div class="jumbotron people" id ="person3">
+
+        <div class="inside">
+          <div class="text">
+            <h1 class="display-4">Tsetan Angmo</h1>
+            <p class="lead">Creator of the animation video “Endangered” Tsetan is a visual artist from Ladakh, currently pursuing Masters in Animation Film Design at National Institute of Design. She has a strong passion for storytelling through illustration and sketches, and finds inspiration from her natural surroundings. She is never seen without a sketchbook in hand. Her first animated film “ No Eechu “ adapted from a local folk tale of Ladakh was screened during the first Bird Festival of Ladakh in 2018. In 2021, her film, “Gyurja” (Change) was screened during The Himalayan Film Festival. She believes that films have a deep and long-lasting impact on society, and hopes to make her mark on communities around India through her work.
+            </p>
+            <hr class="my-4">
+            <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+            <a id = "project" class="btn btn-primary btn-lg" href="https://www.instagram.com/willowturtle/?hl=en" role="button"><i class="bi bi-instagram"></i> Instagram</a>
+          </div>
+          <div style = "margin-left:10%;" class="image">
+              <img style = "width:25rem" src="59646b1c-1159-4895-b195-46c3ce40a475.jpg" class="card-img-top"  alt="...">
+          </div>
+        </div>
+      
+    </div>
+
+    
+    
+
+  <div class="jumbotron peoplealt" id ="person1.1">
+    <div class="body">
+    <img style = "width:25rem" src="Headshot_rajput.jpg" class="card-img-top"  alt="...">
+        
+      <h1 class="display-4" style="margin-top:20px;">Niharika Rajput</h1>
+      <p class="lead">
+        Niharika Rajput is a Wildlife artist,
+                 Creative Conservationist, Visual Science Communicator & a
+                  National Geographic Explorer. Her work aims to use education,
+                   art & storytelling to increase environmental awareness. 
+                   Rajput is a self taught artist & educator who has learned 
+                   to proficiently conduct her work through tangible, on the 
+                   field experiences & by working closely with Ornithologists, 
+                   Evolutionary biologists & Wildlife organisations. 
+                   In the age of the Anthropocene Rajput's work hopes to 
+                   foster an environment where communities can come together ,
+                    be inspired and collectively come up with solutions to conserve wildlife. Niharika's work has been featured in many magazines and on other platforms such as Elle Decor,
+                     The Epoch Times, Ideal Home and Garden, Aesthetica magazine, Hindustan Times, The Hindu, PuneMirror, Etsy India, Mashable India, Little Black Book, 
+                     My Modern Met, Thisiscollosal.com, Atlasobscura.com, Rootsandleisure.com, natureinfocus.com, shoutoutdfw.com among others.
+
+      </p>
+      <hr class="my-4">
+      <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+      <a id = "project" class="btn btn-primary btn-lg" href="https://www.instagram.com/paperchirrups/?hl=en" role="button"><i class="bi bi-instagram"></i> Instagram</a>
+        <a id = "collabs" class="btn btn-primary btn-lg" href="http://www.paperchirrups.com/" role="button"><i class="bi bi-globe"></i> Website</a>
+    </div>
+</div>
+<div class="jumbotron peoplealt" id ="person2.1">
+    <div class="body">
+    <img style = "width:25rem" src="f7d0aa2b-2ed1-4207-8ae0-48e6b7a6fe09.JPG" class="card-img-top"  alt="...">
+        
+      <h1 class="display-4" style="margin-top:20px;">Arnab Kumar Das</h1>
+      <p class="lead">
+        Installed motion sensors of bird calls in the Shola Sky Islands Exhibit Arnab is an Electronics Engineer from India,who has had a passion for creating funky gizmos since his childhood. He was fascinated with electronic appliances at a young age and pursued his interest in electronics with great enthusiasm. His dedication for sharing his knowledge and experiences is commendable, given his participation in various tech fests and passion projects such as his contribution to the motion-sensors in this Shola Sky Island Birds exhibit. Arnab has a strong desire to make an impact on the world by finding creative ways to embed electronics and electro-mechanical processes in social and environmental impact projects.
+      <hr class="my-4">
+      <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+      <a id = "project" class="btn btn-primary btn-lg" href="https://www.instagram.com/arnabdasbwn/?hl=en" role="button"><i class="bi bi-instagram"></i> Instagram</a>
+        <a id = "collabs" class="btn btn-primary btn-lg" href="https://www.arnabkumardas.com/" role="button"><i class="bi bi-globe"></i> Website</a>
+    </div>
+</div>
+  <div class="jumbotron peoplealt" id ="person3.1">
+        <div class="body">
+        <img style = "width:25rem" src="59646b1c-1159-4895-b195-46c3ce40a475.jpg" class="card-img-top"  alt="...">
+            
+          <h1 class="display-4" style="margin-top:20px;">Tsetan Angmo</h1>
+          <p class="lead">Creator of the animation video “Endangered” Tsetan is a visual artist from Ladakh, currently pursuing Masters in Animation Film Design at National Institute of Design. She has a strong passion for storytelling through illustration and sketches, and finds inspiration from her natural surroundings. She is never seen without a sketchbook in hand. Her first animated film “ No Eechu “ adapted from a local folk tale of Ladakh was screened during the first Bird Festival of Ladakh in 2018. In 2021, her film, “Gyurja” (Change) was screened during The Himalayan Film Festival. She believes that films have a deep and long-lasting impact on society, and hopes to make her mark on communities around India through her work.
+          </p>
+          <hr class="my-4">
+          <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+          <a id = "project" class="btn btn-primary btn-lg" href="https://www.instagram.com/willowturtle/?hl=en" role="button"><i class="bi bi-instagram"></i> Instagram</a>
+
+        </div>
+  </div>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

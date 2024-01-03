@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../static/Harsha-Logo.png">
+    <title>National Geographic Web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .navbar .nav-item .dropdown-menu{ margin-top:10px; }
+        .navbar .nav-item:focus {
+            border:none;
+        }
+        .navbar .nav-item:active {
+            border:none;
+        }
+        .navbar-custom{
+          background-color: #2B5FAA;
+        }
+        .navbar-brand{
+          font-size: 35px;
+          font-weight:300;
+          margin-left:30px;
+
+        }
+        .navbar-toggler{ 
+          display:block; 
+        }
+
+        .nav-link{
+          font-size:20px ;
+          padding-bottom:2px;
+          border-bottom:1px #2B5FAA solid;
+          /* #2B5FAA */
+        }
+
+        .nav-link:hover{
+          border-bottom:1px white solid;
+        }
+        th img{
+          max-width: 50%;
+        }
+
+        .col-sm-6 .card{
+          width:10rem;
+        }
+        .birdrow{
+          display: flex;
+          flex-direction: row;
+          width:80%;
+          margin-left:10%;
+        }
+        .birdrow .card{
+          margin:10px;
+        }
+
+        .images{
+          width:40%;
+          display: inline-block;
+        }
+        .images audio{
+          width: 70%;
+        }
+        .modalText{
+          width:60%;
+          display: inline-block;
+          height:100%;
+          padding:20px;
+        }
+        .modal-body{
+          display: flex;
+          flex-direction: row;
+        }
+
+        .birdrow .card-body button{
+          width:100%;
+          color:white;
+          border:none;
+          background:#191919;
+
+        }
+
+        .jumbotron .inside{
+          display:flex;
+          flex-direction: row;
+        }
+
+        .jumbotron{
+            margin-bottom:15px;
+        }
+        #project{
+          margin-top:20px;
+          border-radius:10px;
+        }
+
+        #collabs{
+          margin-top:20px;
+          border-radius:10px;
+        }
+
+        #ceh{
+          margin-top:20px;
+          border-radius:10px;
+        }
+
+        #project2{
+          margin-top:20px;
+          border-radius:10px;
+        }
+
+        #collabs2{
+          margin-top:20px;
+          border-radius:10px;
+        }
+
+        #ceh2{
+          margin-top:20px;
+          border-radius:10px;
+        }
+        .birdrow .card img{
+          height:17rem;
+        }
+
+        .peoplealt {
+            display: none;
+        }
+        .peoplealt .body{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+            #ceh2{
+                visibility: hidden;
+            }
+            #collabs2{
+                visibility: hidden;
+            }
+            #project2{
+                visibility: hidden;
+            }
+        @media only screen and (max-width: 1000px) {
+          .birdrow{
+            display: flex;
+            /* flex-direction: column; */
+            margin-left:10%;
+          }
+          .birdrow .card{
+            margin:10px;
+          }
+          .birdrow .card img{
+          height:10rem;
+          }
+
+        }
+        @media only screen and (max-width: 1000px) {
+            .people{
+                display: none;
+            }
+            .peoplealt{
+                display:block;
+            }
+            .intro{
+                display:none;
+            }
+            #ceh2{
+                visibility: visible;
+            }
+            #collabs2{
+                visibility: visible;
+            }
+            #project2{
+                visibility: visible;
+            }
+            
+        }
+        @media only screen and (max-width: 600px) {
+          .jumbotron .inside .image img{
+            width:15rem;
+          }
+          .birdrow{
+            display: flex;
+            flex-direction: column;
+            margin-left:10%;
+            align-items: center;
+            justify-content: center;
+          }
+          .birdrow .card img{
+          height:17rem;
+          }
+          #jumbo img{
+            display:none;
+          }
+          #jumbo{
+            text-align: center;
+            background-color:blue;
+          }
+
+          .navbar-brand{
+            font-size: 30px;
+          }
+        }
+
+        body{
+            background-image: url("bg2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+        .about-text {
+            background: rgba(225,225,225,0.1);
+            padding:5%;
+            margin:5%;
+            border-radius: 25px;
+            color:white;
+            font-weight:200;
+            }
+
+            @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            .about-text{
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+            }
+        }
+
+        #footer{
+          background-color:#2B5FAA;
+          color:white;
+          margin:0px;
+        }
+        #footer img{
+          margin-right:20px;
+        }
+        #footer .lead{
+          margin-left:90px;
+        }
+    </style>
+</head>
+<body>
+  <!-- Button trigger modal -->
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a href="/index.html"><img src="logo.webp" height="100" width="100" alt=""></a>
+        <h1  class="navbar-brand" href="/"> Kodaikanal International School <p style="font-size: 20px;" class="navbar-brand-bottom">A school the world needs</p></h1>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/project.html">About the Project <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/about.html">About the collaborators <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="about-text">
+        <h1>Exploring the Threatened Shola Sky Islands:</h1>
+        <p>
+            Exploring the Threatened Shola Sky Islands:
+            An art & education project on native birds and their diminishing habitat KIS CEH partnered with National Geographic Explorer Niharika Rajput, to use art, education, and storytelling to increase environmental awareness in the Palani Hills of South India with great emphasis on 13 bird species found almost exclusively in the Shola Sky Island habitat. The high altitude mountain-tops of the Western Ghats known as Shola Sky Islands host a unique and biodiverse forest-grassland ecosystem. Research finds that large parts of the Western Ghats and Palani Hills landscapes are changing rapidly due to human incursions, invasive species, and climate change. Habitats are rapidly changing with the loss of grasslands and increase in woodlands. Certain endemic populations are under threat, and diseases among birds and other animals are increasing in human-influenced areas. This project brings ecological and environment awareness to the public through this immersive bird sculpture and song exhibit, and accompanying animation video titled “Endangered” which tells the story of changing landscapes in the Palani Hills. This project also includes wildlife art workshops for school children in Kodaikanal. Our project seeks to fill the gap in mainstream education by introducing topics of biodiversity and conservation in a real-world context. Students will have an interdisciplinary workshop experience with art, science, and conservation field work. We seek to use art and experiential learning, with a focus on birds, to inspire the youth and adults to take action in protecting and preserving our ecosystems.
+        </p>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

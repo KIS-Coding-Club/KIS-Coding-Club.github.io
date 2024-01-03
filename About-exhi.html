@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="About-exhi.css" rel="stylesheet" type="text/css"> 
+</head>
+<body>
+
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href=""style="color: white">About the Exibition</a>
+  <a href="Nat%20geo%20web%20final.html">Home</a>
+  <a href="About-art.html">About the Artist</a>
+  <a href="https://www.kis.in/breathe/kis-center-for-environment-and-humanity" target="#">KIS CEH</a>
+</div>
+ 
+<div id="navbar">
+<button class="openbtn" onclick="openNav()">
+    <img src="logo.webp" alt="logo" style="width:25%" id="logo-img">
+    <p id="navbartxt">Kodaikanal International School</p>
+    <p id="navbartxt2">A school the world needs</p>
+    <p id="element">☰</p>
+</button>
+</div>
+    
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+<div class="bg-image img6"></div>
+
+<div class="bg-text">
+Exploring the Threatened Shola Sky Islands:<br><br>
+An art & education project on native birds and their diminishing habitat
+KIS CEH partnered with National Geographic Explorer Niharika Rajput, to use art, education, and storytelling to increase environmental awareness in the Palani Hills of South India with great emphasis on 13 bird species found almost exclusively in the Shola Sky Island habitat. The high altitude mountain-tops of the Western Ghats known as Shola Sky Islands host a unique and biodiverse forest-grassland ecosystem. Research finds that large parts of the Western Ghats and Palani Hills landscapes are changing rapidly due to human incursions, invasive species, and climate change. Habitats are rapidly changing with the loss of grasslands and increase in woodlands. Certain endemic populations are under threat, and diseases among birds and other animals are increasing in human-influenced areas.
+This project brings ecological and environment awareness to the public through this immersive bird sculpture and song exhibit, and accompanying animation video titled “Endangered” which tells the story of changing landscapes in the Palani Hills.
+This project also includes wildlife art workshops for school children in Kodaikanal. Our project seeks to fill the gap in mainstream education by introducing topics of biodiversity and conservation in a real-world context. Students will have an interdisciplinary workshop experience with art, science, and conservation field work. We seek to use art and experiential learning, with a focus on birds, to inspire the youth and adults to take action in protecting and preserving our ecosystems. 
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    
+function openNav() {
+  document.getElementById("mySidepanel").style.height = "100%";
+  document.getElementById("mySidepanel").style.width = "20%";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.height = "0";
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script> 
+    
+</body>
+</html>    
