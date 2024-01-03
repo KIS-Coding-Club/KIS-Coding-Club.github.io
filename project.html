@@ -11,6 +11,53 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <style>
+      @media only screen and (max-width: 1000px) {
+            /* Styles for screens up to 1000px wide */
+            .birdrow {
+                flex-direction: column;
+                margin-left: 10%;
+            }
+
+            .birdrow .card {
+                margin: 10px;
+            }
+
+            .birdrow .card img {
+                height: 10rem;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            /* Styles for screens up to 600px wide */
+            .jumbotron .inside .image img {
+                width: 15rem;
+            }
+
+            .birdrow {
+                flex-direction: column;
+                margin-left: 10%;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .birdrow .card img {
+                height: 17rem;
+            }
+
+            .jumbotron img {
+                display: none;
+            }
+
+            .jumbotron {
+                text-align: center;
+            }
+            .navbar{
+              text-align: center;
+              justify-content: center;
+            }
+
+
+        }
         .navbar .nav-item .dropdown-menu{ margin-top:10px; }
         .navbar .nav-item:focus {
             border:none;
@@ -22,10 +69,9 @@
           background-color: #2B5FAA;
         }
         .navbar-brand{
-          font-size: 35px;
+          font-size: 23px;
           font-weight:300;
           margin-left:30px;
-
         }
         .navbar-toggler{ 
           display:block; 
@@ -199,9 +245,6 @@
             background-color:blue;
           }
 
-          .navbar-brand{
-            font-size: 30px;
-          }
         }
 
         body{
@@ -249,7 +292,6 @@
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <a href="/index.html"><img src="logo.webp" height="100" width="100" alt=""></a>
         <h1  class="navbar-brand" href="/"> Kodaikanal International School <p style="font-size: 20px;" class="navbar-brand-bottom">A school the world needs</p></h1>
-        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
